@@ -1,0 +1,7 @@
+{
+  "buildCommand": "cd cleangreen-crm && npm run build",
+  "devCommand": "cd cleangreen-crm && npm run dev",
+  "installCommand": "cd cleangreen-crm && npm install",
+  "framework": null,
+  "outputDirectory": "cleangreen-crm/.next"
+}
