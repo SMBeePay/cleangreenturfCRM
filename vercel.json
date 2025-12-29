@@ -1,7 +1,15 @@
 {
-  "buildCommand": "cd cleangreen-crm && npm run build",
-  "devCommand": "cd cleangreen-crm && npm run dev",
-  "installCommand": "cd cleangreen-crm && npm install",
-  "framework": null,
-  "outputDirectory": "cleangreen-crm/.next"
+  "version": 2,
+  "builds": [
+    {
+      "src": "cleangreen-crm/package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "cleangreen-crm/$1"
+    }
+  ]
 }
